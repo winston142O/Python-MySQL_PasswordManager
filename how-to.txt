@@ -1,0 +1,14 @@
+------------ DATABASE CREATION ------------
+
+config.py make = make new database and pick new mp
+config.py delete = delete existing database
+config.py remake
+
+------------ COMMANDS ------------
+
+pm.py add -s sitename -u siteurl -e email -l loginname = ADD ENTRY 
+pm.py d -s sitename -u siteurl -e email -l loginname = DELETE ENTRY
+pm.py e = SHOW ALL ENTRIES
+pm.py e -s sitename == SHOW SPECIFIC ENTRY
+pmpy e -s sitename --copy = COPY PASSWORD TO CLIPBOARD
+pm.py g --lenght = GENERATE PASSWORD
