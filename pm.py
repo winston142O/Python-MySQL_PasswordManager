@@ -6,12 +6,13 @@ from rich import print as printc
 import utils.add
 import utils.retrieve
 import utils.generate
+import utils.helpTPM
 from utils.dbconfig import dbconfig
 import utils.delete
 
 # arguments
 parser = argparse.ArgumentParser(description='Arguments')
-parser.add_argument('option', help='(a)dd / (d)elete / (e)xtract / (g)enerate')
+parser.add_argument('option', help='(a)dd / (d)elete / (e)xtract / (g)enerate / (h)elp')
 parser.add_argument("-s", "--name", help="Site name")
 parser.add_argument("-u", "--url", help="Site URL")
 parser.add_argument("-e", "--email", help="Email")
@@ -90,5 +91,8 @@ def main():
 		password = utils.generate.generatePassword(args.length)
 		pyperclip.copy(password)
 		printc("[green][+][/green] Password generated and copied to clipboard")
+	
+	if args.option in ["help", "g"]:
+		utils.helpTPM.helpTPM()
 
 main()
