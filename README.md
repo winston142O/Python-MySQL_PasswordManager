@@ -29,3 +29,4 @@ pm.py e = SHOW ALL ENTRIES
 pm.py e -s sitename == SHOW SPECIFIC ENTRY
 pmpy e -s sitename --copy = COPY PASSWORD TO CLIPBOARD
 pm.py g --lenght = GENERATE PASSWORD
+pm.py help = show all commands
